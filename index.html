@@ -5,72 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Setup Services</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: white; padding: 15px; text-align: center; }
-        nav { text-align: center; background: #444; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 20px; text-align: center; }
-        .gallery img { width: 200px; margin: 10px; }
-        footer { background: #333; color: white; text-align: center; padding: 15px; position: relative; bottom: 0; width: 100%; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; }
+        header { background: #222; color: white; text-align: center; padding: 20px; }
+        nav { text-align: center; padding: 10px; background: #444; }
+        nav a { color: white; text-decoration: none; margin: 15px; }
+        .container { padding: 20px; text-align: center; }
+        .booking-form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; }
+        .booking-form input, .booking-form textarea { width: 100%; margin-bottom: 10px; padding: 10px; }
+        .booking-form button { background: #222; color: white; padding: 10px; border: none; cursor: pointer; }
+        .testimonials { background: #eee; padding: 20px; }
+        .footer { background: #222; color: white; text-align: center; padding: 10px; }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Our Bar Setup Services</h1>
-        <p>Providing the best bar setups for weddings and parties!</p>
     </header>
-    
     <nav>
         <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#booking">Booking</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
-    
-    <section id="home">
-        <h2>About Us</h2>
-        <p>We provide professional bar setups for weddings and parties, ensuring your guests have an unforgettable experience.</p>
-    </section>
-    
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="bar1.jpg" alt="Bar Setup 1">
-            <img src="bar2.jpg" alt="Bar Setup 2">
-            <img src="bar3.jpg" alt="Bar Setup 3">
-        </div>
-    </section>
-    
-    <section id="booking">
-        <h2>Book a Bar Setup</h2>
+    <div class="container" id="home">
+        <h2>Professional Bar Setups for Weddings & Parties</h2>
+        <p>We provide high-quality bar setups for all your events.</p>
+    </div>
+    <div class="container booking-form" id="contact">
+        <h2>Book Your Bar Setup</h2>
         <form>
-            <label>Name:</label>
-            <input type="text" name="name" required><br>
-            <label>Email:</label>
-            <input type="email" name="email" required><br>
-            <label>Event Details:</label><br>
-            <textarea name="details" required></textarea><br>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Event Details" required></textarea>
             <button type="submit">Submit Inquiry</button>
         </form>
-    </section>
-    
-    <section id="testimonials">
+    </div>
+    <div class="container testimonials" id="testimonials">
         <h2>What Our Customers Say</h2>
-        <p>"Amazing bar setup! Our wedding was a hit thanks to this service." - John D.</p>
-        <p>"Highly recommended for any party! Professional and stylish." - Sarah W.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@barsetup.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Follow us on social media:</p>
-        <a href="#">Facebook</a> | <a href="#">Instagram</a>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Bar Setup Services. All Rights Reserved.</p>
-    </footer>
+        <p>"Amazing service! Highly recommended." - John Doe</p>
+    </div>
+    <div class="footer">
+        <p>Follow us on Social Media</p>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </div>
 </body>
 </html>
+
